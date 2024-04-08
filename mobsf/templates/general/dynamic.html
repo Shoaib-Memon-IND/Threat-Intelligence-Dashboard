@@ -1,0 +1,81 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="Android Security Framework (AndoSF) is an automated, all-in-one mobile application (Android/iOS/Windows) pen-testing, malware analysis and security assessment framework capable of performing static and dynamic analysis.">
+      <meta name="author" content="AndroSek | Threat Intelligence Framework">
+      <link rel="icon" href="{% static "img/favicon.ico" %}">
+      <title>Android Security Framework - AndroSek</title>
+      <link rel="stylesheet" href="{% static "adminlte/dashboard/css/adminlte.min.css" %}">
+      <link rel="stylesheet" href="{% static "adminlte/plugins/fontawesome-free/css/all.min.css" %}">
+      <link rel="stylesheet" href="{% static "others/css/spinner.css" %}">
+      <link rel="stylesheet" href="{% static "landing/css/home.css" %}">
+      <!-- Google Font: Source Sans Pro -->
+      <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+   </head>
+   <body>
+
+    <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #111;">
+        <div class="container-fluid">
+            <a  class="navbar-brand abs">
+                <img src="{% static "img/AndroSek.png" %}" width="20%" height="20%"/>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="collapsingNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'recent' %}">RECENT SCANS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'home' %}">STATIC ANALYSIS</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">DYNAMIC ANALYSIS</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a>
+                        <form action="/search" method="GET">
+                            <div class="input-group input-group-sm">
+                                <input class="form-control form-control-navbar" id="navbar-search-input" type="search" placeholder="Search MD5" name="md5" aria-label="Search">
+                                <div class="input-group-append">
+                                  <button class="btn btn-navbar" type="submit">
+                                    <i class="fas fa-search"></i>
+                                  </button>
+                                </div>
+                              </div>
+                        </form>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="h-100 d-flex align-items-center justify-content-center">
+      <div class="card justify-content-center" style="width: 25rem; background: #c31432; background: -webkit-linear-gradient(to bottom, #c31432, #240b36); background: linear-gradient(to bottom, #c31432, #240b36);">
+
+        
+          <i style="color:#A4C639;" class="fab fa-android fa-10x d-flex justify-content-center"></i>
+          <div class="card-body">
+            <h4 class="d-flex justify-content-center" style="color: #ffffff; text-shadow: none;">Android Dynamic Analysis</h4>
+            <p class="card-text" style="color: #ffffff; text-shadow: none;">Perform Dynamic Analysis of Android Applications.</p>
+            <a href="{% url 'dynamic_android' %}" class="btn btn-primary d-flex justify-content-center" style="background-color: #ffffff; color: #111111;text-shadow: none; font-size: 18px; font-weight: bold;"><span style="color: #111; text-shadow: none; margin-top: 4px; margin-right: 5px; font-size: 18px; font-weight: bold;" class="fas fa-cloud-upload-alt"></span>Connect To Dynamic Analysis</a>
+          </div>
+        </div>
+        <div class="mastfoot">
+          <div class="inner">
+             <h6></h6>
+             </br>
+             <p>&copy; {% now "Y" %}  Threat Intelligence Framework - AndroSek</p>
+             <p>Developed By:    <a href="https://www.linkedin.com/in/shoaib-memon/">Shoaib Memon</a> | <a href="https://www.linkedin.com/in/vaishnavinair11/">Vaishnavi Nair</a></p>
+          </div>
+       </div>
+      </div>
+</body>
+</html>

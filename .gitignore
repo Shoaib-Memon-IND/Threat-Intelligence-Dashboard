@@ -10,11 +10,15 @@ app/static/upload
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
+<<<<<<< HEAD
 *$py.class
+=======
+>>>>>>> d71b192 (Initial Commit)
 
 # C extensions
 *.so
 
+<<<<<<< HEAD
 # Distribution / packaging
 .Python
 build/
@@ -23,10 +27,23 @@ dist/
 downloads/
 eggs/
 .eggs/
+=======
+.vscode/
+
+# Distribution / packaging
+.Python
+venv/
+env/
+build/
+develop-eggs/
+downloads/
+eggs/
+>>>>>>> d71b192 (Initial Commit)
 lib/
 lib64/
 parts/
 sdist/
+<<<<<<< HEAD
 var/
 wheels/
 <<<<<<< HEAD
@@ -38,6 +55,14 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
+=======
+dist
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+*.pyc
+>>>>>>> d71b192 (Initial Commit)
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
@@ -52,6 +77,7 @@ pip-delete-this-directory.txt
 # Unit test / coverage reports
 htmlcov/
 .tox/
+<<<<<<< HEAD
 .nox/
 .coverage
 .coverage.*
@@ -65,7 +91,16 @@ coverage.xml
 <<<<<<< HEAD
 =======
 cover/
+<<<<<<< HEAD
 >>>>>>> d37bfa5 (Initial commit)
+=======
+=======
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+>>>>>>> d71b192 (Initial Commit)
+>>>>>>> 268d5b7 (Initial Commit)
 
 # Translations
 *.mo
@@ -73,6 +108,7 @@ cover/
 
 # Django stuff:
 *.log
+<<<<<<< HEAD
 local_settings.py
 db.sqlite3
 db.sqlite3-journal
@@ -83,13 +119,18 @@ instance/
 
 # Scrapy stuff:
 .scrapy
+=======
+>>>>>>> d71b192 (Initial Commit)
 
 # Sphinx documentation
 docs/_build/
 
 # PyBuilder
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 268d5b7 (Initial Commit)
 .pybuilder/
 >>>>>>> d37bfa5 (Initial commit)
 target/
@@ -187,4 +228,32 @@ cython_debug/
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
+<<<<<<< HEAD
 >>>>>>> d37bfa5 (Initial commit)
+=======
+=======
+target/
+
+#Mac
+.DS_Store
+
+#D2J Error file
+classes-error.zip
+
+#IntelliJ IDE
+.idea
+*/migrations/*
+.fuse_hidden*
+.tox
+.python-version
+
+#MobSF Files
+mobsf/debug.log
+mobsf/uploads/
+mobsf/db.sqlite3
+mobsf/secret
+mobsf/StaticAnalyzer/migrations
+mobsf/MobSF/windows_vm_priv_key.asc
+mobsf/setup_done.txt
+>>>>>>> d71b192 (Initial Commit)
+>>>>>>> 268d5b7 (Initial Commit)
