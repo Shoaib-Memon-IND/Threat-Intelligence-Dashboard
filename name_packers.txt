@@ -1,5 +1,0 @@
-UPX
-MPRESS
-ExeStealth
-Morphine
-Themida
