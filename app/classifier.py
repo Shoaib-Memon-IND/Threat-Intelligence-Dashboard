@@ -46,15 +46,6 @@ def classify(file, ch):
         print(result)
 
         if result < 0.02:
-            # return 'Benign(safe)'
-            result = 'Benign(safe)'
-        else:
-            # return 'Malware'
-            result = 'Malware'
-    if ch == 1:
-        SVC = pickle.load(open('static/models/svc_ga.pkl', 'rb'))
-        result = SVC.predict([data[sel.support_]])
-        if result == 'benign':
             result = 'Benign(safe)'
         else:
             result = 'Malware'
